@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#testimonial-grid-container {
+    padding: 8% 1%; 
+}
+
+#testimonial-1 {
+    background-color: #7541c8; 
+    color: #ecf2f8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color: #ecf2f8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+}
+
+#testimonial-3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+    color: #19212e;
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color: #ecf2f8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+}
+
+#testimonial-5 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.1);
+    color: #19212e;
+}
+
+.grid-item {
+    margin: 30px;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header-image {
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 50%;
+    border: 1px solid #c541b4;
+}
+
+h2 {
+    margin-bottom: 20px;
+    opacity: 90%;
+}
+
+p {
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.name {
+    opacity: 100%;
+    z-index: 1;
+}
+
+#quotes {
+    border-radius: 0%;
+    border: 0px;
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    z-index: 0;
+}
+
+@media (min-width : 576px) {
+    #testimonial-grid-container {
+        display: flex; 
+    }
+
+    #main-left {
+        flex-basis: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonial-5 {
+        flex-basis: 25%;
+        margin-left: 0px;
+    }
+
+    #top {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #testimonial-1 {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        flex-basis: 67%;
+    }
+
+    #testimonial-2 {
+        margin-bottom: 0px;
+        flex-basis: 33%;
+    }
+
+    #testimonial-3 {
+        margin-right: 0px;
+        flex-basis: 33%;
+    }
+
+    #testimonial-4 {
+        flex-basis: 67%;
+    }
+}
